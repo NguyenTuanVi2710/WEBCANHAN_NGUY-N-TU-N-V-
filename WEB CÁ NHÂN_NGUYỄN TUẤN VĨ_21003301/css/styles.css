@@ -1,0 +1,281 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    /*padding-left: 200px;
+    padding-right: 200px;*/
+    font-family: 'Roboto Slab', serif;
+    background: linear-gradient(to right, #7db6e7, #dc7ec6);
+   
+}
+
+#PersonalImage {
+    /* border-radius: 100px; */
+    width:400px;
+    border-radius: 200px;
+    box-shadow: 5px 5px 1px rgb(160, 160, 160);
+    /* border: 1px solid black; */
+    /* height: 200px; */
+}
+
+#PersonalImage:hover {
+    /* border-radius: 100px; */
+    transition: all 0.5s;
+    width:380px;
+    cursor: pointer;
+    border-radius: 215px;
+    box-shadow: 10px 10px 1px rgb(78, 78, 78);
+    /* border: 1px solid black; */
+    /* height: 200px; */
+}
+/* Header */
+#header {
+    position:fixed;
+    background-color: rgb(143, 244, 244);
+    padding:20px 100px 20px 100px;
+    width: 100%;
+}
+#header .title{
+    display: inline-block;
+}
+#header .title a:link,a:visited {
+    color: black;
+    text-decoration: none;
+    font-size: 38px;
+    font-weight:700;
+}
+
+#header .title a:hover {
+    transition: all 0.3s;
+    color: White;
+    text-decoration: none;
+}
+
+#header ul{
+    display: inline-block;
+    list-style: none;
+    background-color:inherit;
+    margin-left:620px;
+}
+#header ul li {
+    display: inline-block;
+    padding:5px 15px 5px 15px;
+}
+#header ul li a{
+    color:black;
+    font-size:18px;
+    font-weight:500;
+    text-decoration: none;
+}
+#header ul li a:hover{
+    transition: all 0.3s;
+    cursor: pointer;
+    color: White    ;
+}
+/* conatainer */
+#container{
+    padding:100px 100px 0px 100px;
+}
+#container .area_1{
+    display: flex;
+    flex-direction: row-reverse;
+}
+#container .area_1 .left .Intro p{
+    line-height:1.8;
+}
+#container .area_1 .right{
+    width: 50%;
+}
+#container .area_1 .right .img {
+    justify-content: center;
+    display:flex;
+    align-items:center;
+}
+#container .area_1 .left{
+    display: flex;
+    align-items:center;
+}
+#container .area_1 .left .title{
+    font-size:50px;
+    font-weight:bold;
+}
+/* PersonalSkill */
+#container .personalSkill{
+    padding: 20px 0px 20px 0px;
+}
+#container .personalSkill .title {
+    font-size:32px;
+    font-weight:bold;
+}
+#container .personalSkill .imgPhotoshop {
+    width:250px;
+}
+#container .personalSkill .imgPhotoshop1 {
+    width:350px;
+}
+#container .personalSkill .imgMPX {
+    width:600px;
+}
+
+#container .personalSkill .content {
+    padding: 10px 0px 10px 20px;
+    height: 800px;
+}
+#container .personalSkill .imgPhotoshop:hover,
+#container .personalSkill .imgPhotoshop1:hover,
+#container .personalSkill .imgMPX:hover {
+    transform: scale(1.1); /* Thay đổi kích thước khi hover */
+    transition: transform 0.3s ease; /* Thêm hiệu ứng chuyển động */
+}
+
+/* skill */
+#container #skill{
+    padding: 20px 0px 20px 0px;
+}
+#container #skill a{
+    text-decoration: none;
+}
+#container #skill .title{
+    font-size:24px;
+    font-weight:bold;
+}
+
+
+#container #skill .img {
+    width:300px;
+    border-radius: 10px;
+}
+#container #skill .content:hover img {
+    opacity: 0.1;
+    transition: all 0.5s;
+    cursor: pointer;
+} 
+#container #skill .content .sub{
+    position: relative;
+}
+#container #skill .content:hover .infoImg{
+    opacity: 1;
+    transform: translateY(-150px);
+}
+.infoImg {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.8s;
+    text-align: justify;
+    padding: 5px 5px 5px 5px;
+}
+.infoImg p{
+    font-weight: 500;
+}
+
+#container #skill table tr {
+    padding:20px 0px 20px 0px;
+}
+#container #skill table tr td {
+    padding:10px 5px 10px ;
+    border-bottom: 2px solid gray;
+    height:200px;
+}
+#container #skill ul{
+    padding:10px 0px 10px 0px;
+}
+#container #skill ul li{
+    margin-left: 20px;
+}
+/*personalPreference */
+#container #personalPreference{
+    padding: 20px 0px 20px 0px;
+}
+#container #personalPreference a{
+    text-decoration: none;
+}
+#container #personalPreference .title{
+    font-size:24px;
+    font-weight:bold;
+}
+#container #personalPreference table tr td .img {
+    width:100%;
+}
+#container #personalPreference table tr td .img:hover {
+    width:110%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#container #personalPreference table tr td {
+    padding:5px 5px 5px 5px;
+    
+}
+/* Contact */
+#container #Contact{
+    padding: 20px 0px 20px 0px;
+}
+#container #Contact a{
+    text-decoration: none;
+}
+#container #Contact .title {
+    font-size:24px;
+    font-weight:bold;
+}
+#container #Contact .imgPhotoshop {
+    width:40px;
+}
+#container #Contact table tr td {
+    padding:5px 5px 5px 5px;
+}
+/* footer */
+#footer{
+    font-weight: 500;
+    text-align:center;
+    background-color: #f1f0f1;
+    /* background-color:inherit; */
+    padding:20px 200px 20px 200px;
+}
+#footer img{
+    padding:20px 0px 20px 0px;
+}
+#footer img:hover{
+    transition: all 0.3s;
+    width:220px;
+    cursor: pointer;
+}
+.social-icon {
+    margin: 15px 0px 10px;
+    margin-top: 10px;
+    
+}
+
+.social-icon ul li {
+    display: inline-block;
+    margin: 0 6px;
+}
+
+.social-icon ul li:last-child {
+    margin-right: 0;
+}
+
+.social-icon ul li:first-child {
+    margin-left: 0;
+}
+
+.social-icon ul li a {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 4px 4px 8px #d0d0d0, -4px -4px 8px #ffffff;
+    color: #0d0d25;
+    font-size: 19px;
+}
+
+.social-icon ul li a:hover {
+    background:  #93aed3;
+}
+
+.social-icon ul li a:hover i {
+    color: #ffffff !important;
+}
